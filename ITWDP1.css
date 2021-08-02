@@ -82,21 +82,21 @@ body {
 }
 
 .site-section-politics {
-    color: cornflowerblue;
+    background-color: cornflowerblue;
 }
 
 .site-section-tech {
-    color: lightcoral;
+    background-color: lightcoral;
 }
 
 .site-section-local{
-    color: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow;
 }
 
 .site-section-opinion {
-    color: lightseagreen;
+    background-color: lightseagreen;
 }
 
 .site-section-sports {
-    color: lightpink;
+    background-color: lightpink;
 }
