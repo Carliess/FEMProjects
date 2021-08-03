@@ -8,6 +8,11 @@ comment
 */
 
 
+
+//This commented off section is for Programming Fundementals
+
+
+/*
 const monthlyRent = 500;
 
 const yearlyRent = monthlyRent * 12;
@@ -39,6 +44,8 @@ if (2 + 2 === 4) {
     console.log("FREAKOUT");
 }
 
+
+/*
 const friendsAtYourParty = 10;
 
 if (friendsAtYourParty === 0) {
@@ -48,3 +55,64 @@ if (friendsAtYourParty === 0) {
 } else {
     console.log("Woo! Start blasting some Music!!!")
 }
+
+
+
+// this is an in-effcient way of doing loops, going to comment out.
+
+let friendsAtYourParty = 0;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+friendsAtYourParty = friendsAtYourParty + 1;
+
+console.log(friendsAtYourParty)
+
+
+/*
+let friendsAtYourParty = 0;
+while (friendsAtYourParty < 10) {
+    friendsAtYourParty = friendsAtYourParty + 1;
+}
+
+console.log(friendsAtYourParty)
+
+let friendsAtYourParty2 = 0;
+for (let i = 0; i <= 10; i++) {
+    friendsAtYourParty2++;
+}
+console.log(friendsAtYourParty);
+*/
+
+
+//Functions and Scope Section
+
+function addTwo(number) {
+    return number + 2;
+}
+
+const finalAnswer = addTwo(25);
+console.log(finalAnswer);
+
+function greet(firstName, lastName, honorific, greeting) {
+    return `${greeting} ${honorific} ${lastName}! I'm extremely pleased you could join us, ${firstName}! I Hope you enjoy your stay, ${honorific} ${lastName}.`;
+}
+
+console.log(greet("Steve", "Holt", "Master", "Good Evening!"))
+console.log(greet("Jack", "Sparrow", "Captain", "Ahoy der"))
+
+const myHomeCity = "Calgary";
+const myHomeProvince = "Alberta";
+const myHomeCountry = "Canada";
+
+function logOutYourHome(city, province, country) {
+    console.log(`You are from ${city}, ${province} ${country}.`);
+}
+
+logOutYourHome(myHomeCity, myHomeProvince, myHomeCountry);
