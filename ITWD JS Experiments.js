@@ -93,6 +93,7 @@ console.log(friendsAtYourParty);
 
 //Functions and Scope Section
 
+/*
 function addTwo(number) {
     return number + 2;
 }
@@ -107,6 +108,8 @@ function greet(firstName, lastName, honorific, greeting) {
 console.log(greet("Steve", "Holt", "Master", "Good Evening!"))
 console.log(greet("Jack", "Sparrow", "Captain", "Ahoy der"))
 
+*/
+
 const myHomeCity = "Calgary";
 const myHomeProvince = "Alberta";
 const myHomeCountry = "Canada";
@@ -116,3 +119,64 @@ function logOutYourHome(city, province, country) {
 }
 
 logOutYourHome(myHomeCity, myHomeProvince, myHomeCountry);
+
+/* Scope JS work 
+
+
+once you call a function, it has its own scope...once the scope/function is done, any avariable that hasn't been explicitly been held on to or
+returrned at the end is discarded
+*/
+
+/*
+function addFive(number) {
+    const someVariable = "you can't see me outside this function";
+    return number + 5;
+}
+
+addFive(10);
+console.log(someVariable);
+
+*/
+/*
+
+const A = "A";
+let F;
+
+function doStuff(B) {
+    console.log(B); //works, B parameter is still in scope
+    const C = "C";
+    let H = "H" ;
+    if (1 + 1 === 2){
+        const D = "D" ;
+        H = "something else" ;
+    }
+    console.log(D); //does NOT work, D was declared in the IF statement block
+    console.log(H); //works, H was declared ourside IF Statement
+    F = "F";
+}
+
+let E = 0;
+while (E < 3) {
+    E++;
+    console.log(A); //works, the outter block/global scope is still in scope
+    const G = "G";
+}
+console.log(E); // works E was declared oustide the while loop
+console.log(G); // does NOT work, declared inside while loop and its over
+
+doStuff("B");
+console.log(B); // does NOT work, B parameter expires after function call
+console.log(C); // does NOT work, C was declared inside the function, and function is over
+console.log(F); // Works, F was declared in global scope
+
+*/
+
+//Built ins
+
+const sentence = "ThIs HaS wEiRd CaSiNg On It";
+console.log(sentence.toLowerCase());
+
+console.log(Math.round(6.3));
+
+const name = "Carliesp Corlest";
+console.log(name.substr(6, 3));
