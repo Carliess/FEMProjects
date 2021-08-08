@@ -180,3 +180,39 @@ console.log(Math.round(6.3));
 
 const name = "Carliesp Corlest";
 console.log(name.substr(6, 3));
+
+
+
+
+
+// Objects and Arrays Section
+
+/*
+const OBJECT = {
+    KEY : VALUE
+}
+
+*/
+
+const person1 = {
+    name: "Kevin",
+    ageRange: "25-35"
+};
+
+const person2 = {
+    name: "Allan",
+    ageRange: "65-75"
+};
+
+function suggestMusic(person) {
+    if (person.ageRange === "25-35"){
+        console.log("We think you'll like Daft Punk your crazy Mellenial");
+    } else if (person.ageRange === "65-75"){
+        console.log("You're like Johnny Cash, he walks lines.");
+    } else {
+        console.log("Try...Beatles?! I dont know man, im just trying to learn some code...")
+    }
+}
+
+suggestMusic(person1);
+suggestMusic(person2);
